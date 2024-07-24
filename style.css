@@ -1,0 +1,171 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+	
+h1{
+	font-family: "Lucida Handwriting", cursive;
+}
+
+h2{
+	font-family: "Courier New", monospace;
+}
+
+body{
+		background-color: #FFD0F4;
+}
+
+.card{
+	width: 640px;
+	height: 490px;
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+	transition: 1s;
+}
+.card:hover{
+	transform: rotate(-5deg);
+}
+
+.card:hover .outside{
+	transform: rotateY(-130deg);
+}
+
+.outside,
+.inside{
+	height: 100%;
+	width: 50%;
+	position: absolute;
+	left: 50.1%;
+}
+
+.inside{
+	left: 50%;
+	background: linear-gradient(to right, #FFBBF1, #FFD0F4 30%);
+	line-height: 3px;
+	padding: 0 20px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.outside{
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	z-index: 1;
+	transform-origin: left;
+	transition: 2s;
+}
+
+.front,
+.back{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	transform: rotateX(0deg);
+}
+
+.front{
+	background-color: white;
+}
+
+.back{
+	transform: rotateY(180deg);
+	background: linear-gradient(to-left, #FFD0F4, #FFBBF1 30%);
+}
+
+.cake{
+	width: 100%;
+	position: absolute;
+	bottom: 35px;
+}
+
+.top-layer,
+.middle-layer,
+.bottom-layer{
+	height: 80px;
+	width: 240px;
+	background-repeat: repeat;
+	background-size: 60px 100px;
+	background-position: 28px 0;
+	background-image: 
+	linear-gradient(
+		transparent 50px.
+		#FED897 50px,
+		#FED897 60px,
+		transparent 60px
+		),
+	radial-gradient(
+		circle at 30px 5px,
+		#F36363 30px,
+		white 31px);
+	border-radius: 10px 10px 0 0;
+	position: relative;
+	margin: auto;	
+}
+
+.middle-layer{
+	transform: scale(0.85);
+	top: 6px;
+}
+
+.top-layer{
+	transform: scale(0.7);
+	top: 26px;
+}
+
+.candle{
+	height: 45px;
+	width: 15px;
+	background: repeating-linear-gradient(
+	45deg,
+	#E256C4 0,
+	#E256C4 5px,
+	#D800AA 5px,
+	#D800AA 10px);
+	position: absolute;
+	margin: auto;
+	left: 0;
+	right: 0;
+	bottom: 202px;
+}
+
+.candle:before{
+	content: "";
+	position: absolute;
+	height: 16px;
+	width: 16px;
+	background-color: #FFD0F4;
+	border-radius: 0 50% 50% 50%;
+	bottom: 45px;
+	transform: rotate(45deg);
+	left; -1px;
+}
+
+.outside h1{
+	text-transform: uppercase;
+	margin-top: 30px;
+	text-align: center;
+	font-size: 23px;
+	color: #C7149F;
+}
+
+.inside h2{
+	font-size: 15px;
+	color: black;
+}
+
+.inside h3{
+	font-size: 100px;
+	line-height: 100px;
+}
