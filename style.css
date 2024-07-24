@@ -48,7 +48,7 @@ body{
 
 .inside{
 	left: 50%;
-	background: linear-gradient(to right, white, #E0E0E0 30%);
+	background: linear-gradient(to right, #E0E0E0, white 30%);
 	line-height: 1;
 	padding: 0 20px;
 	text-align: center;
@@ -83,7 +83,7 @@ body{
 
 .back{
 	transform: rotateY(180deg);
-	background: linear-gradient(to left, white, #E0E0E0 30%);
+	background: linear-gradient(to left, #E0E0E0, white 30%);
 }
 
 .cake{
@@ -100,9 +100,8 @@ body{
 	background-repeat: repeat;
 	background-size: 60px 100px;
 	background-position: 28px 0;
-	background-image: 
-	linear-gradient(
-		transparent 50px.
+	background-image: linear-gradient(
+		transparent 50px,
 		#FED897 50px,
 		#FED897 60px,
 		transparent 60px
@@ -151,7 +150,7 @@ body{
 	border-radius: 0 50% 50% 50%;
 	bottom: 48px;
 	transform: rotate(45deg);
-	left; -1px;
+	left: -1px;
 }
 
 .outside h1{
