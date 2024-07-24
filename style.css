@@ -49,7 +49,7 @@ body{
 .inside{
 	left: 50%;
 	background: linear-gradient(to right, white, #E0E0E0 30%);
-	line-height: 3;
+	line-height: 1;
 	padding: 0 20px;
 	text-align: center;
 	display: flex;
