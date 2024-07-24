@@ -29,6 +29,7 @@ body{
 	perspective: 1200px;
 	transition: 1s;
 }
+
 .card:hover{
 	transform: rotate(-5deg);
 }
@@ -47,8 +48,8 @@ body{
 
 .inside{
 	left: 50%;
-	background: linear-gradient(to right, #FFBBF1, #FFD0F4 30%);
-	line-height: 3px;
+	background: linear-gradient(to right, white, #E0E0E0 30%);
+	line-height: 3;
 	padding: 0 20px;
 	text-align: center;
 	display: flex;
@@ -70,6 +71,7 @@ body{
 	height: 100%;
 	width: 100%;
 	position: absolute;
+	background-color: white;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	transform: rotateX(0deg);
@@ -81,7 +83,7 @@ body{
 
 .back{
 	transform: rotateY(180deg);
-	background: linear-gradient(to-left, #FFD0F4, #FFBBF1 30%);
+	background: linear-gradient(to left, #E0E0E0, white 30%);
 }
 
 .cake{
@@ -128,11 +130,11 @@ body{
 	height: 45px;
 	width: 15px;
 	background: repeating-linear-gradient(
-	45deg,
-	#E256C4 0,
-	#E256C4 5px,
-	#D800AA 5px,
-	#D800AA 10px);
+		45deg,
+		#E256C4 0,
+		#E256C4 5px,
+		#D800AA 5px,
+		#D800AA 10px);
 	position: absolute;
 	margin: auto;
 	left: 0;
@@ -147,7 +149,7 @@ body{
 	width: 16px;
 	background-color: #FFD0F4;
 	border-radius: 0 50% 50% 50%;
-	bottom: 45px;
+	bottom: 48px;
 	transform: rotate(45deg);
 	left; -1px;
 }
@@ -165,7 +167,7 @@ body{
 	color: black;
 }
 
-.inside h3{
-	font-size: 100px;
-	line-height: 100px;
+.inside p{
+	font-size: 85px;
+	line-height: 85px;
 }
